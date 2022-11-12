@@ -92,8 +92,6 @@ form {
       }
     }
   }
-}
-
 .sectionForm {
   margin-right: 100px;
   width: 40%;
@@ -104,4 +102,11 @@ form {
   form {
     width: 100%;
   }
+}
+}
+.imgBG {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 210px;
+  border: solid 1px hsl(0, 100%, 74%);
 }

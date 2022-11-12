@@ -75,13 +75,18 @@ form {
         font-size: 3.5rem; }
       body .titleAndDescription p {
         font-size: 1.2rem;
-        text-align: justify; } }
+        text-align: justify; }
+  .sectionForm {
+    margin-right: 100px;
+    width: 40%; }
+    .sectionForm .testTime {
+      margin-top: 200px;
+      width: 85%; }
+    .sectionForm form {
+      width: 100%; } }
 
-.sectionForm {
-  margin-right: 100px;
-  width: 40%; }
-  .sectionForm .testTime {
-    margin-top: 200px;
-    width: 85%; }
-  .sectionForm form {
-    width: 100%; }
+.imgBG {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 210px;
+  border: solid 1px #ff7a7a; }
