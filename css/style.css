@@ -2,22 +2,28 @@ body {
   background-image: url(/images/bg-intro-mobile.png);
   background-color: #ff7a7a;
   font-family: 'Poppins', sans-serif; }
-  body h1 {
+  body .titleAndDescription h1 {
+    font-size: 27px;
     font-weight: 500;
     color: white;
     text-align: center; }
-  body p {
+  body .titleAndDescription p {
     color: white;
     font-family: 'Poppins', sans-serif;
-    text-align: center; }
+    text-align: center;
+    font-size: 14px;
+    justify-content: center;
+    margin: 0 25px 0; }
   body .testTime {
     background-color: #6055a5;
-    width: 80%;
+    width: 65%;
     text-align: center;
     color: white;
+    font-size: 13px;
     border-radius: 10px;
     padding: 17px 30px;
-    margin: 50px 10px 30px;
+    margin: 50px 0px 30px;
+    margin-left: 33px;
     box-shadow: 0 8px #2119502b; }
     body .testTime p {
       margin: 0 30px 0; }
@@ -26,13 +32,13 @@ form {
   background-color: white;
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
   align-items: center;
   border-radius: 20px;
   width: 80%;
   align-self: center;
   margin: auto;
-  box-shadow: 0 8px #2119502b; }
+  box-shadow: 0 8px #2119502b;
+  margin-bottom: 50px; }
   form input {
     margin-top: 12px;
     width: 80%;
@@ -50,7 +56,10 @@ form {
     color: white;
     border: none;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif; }
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px; }
+  form .submitBtn:hover {
+    background-color: rgba(56, 204, 140, 0.695); }
   form p {
     color: #b9b6d3;
     font-size: 10px;
@@ -61,6 +70,18 @@ form {
     form p span {
       color: #ff7a7a;
       font-weight: 600; }
+
+.errorStyle {
+  color: #ff7a7a;
+  font-size: x-small;
+  font-style: italic;
+  display: flex;
+  align-self: end;
+  margin-right: 26px; }
+
+.placeHolderErrorMail::placeholder {
+  font-size: small;
+  color: #ff7a7a; }
 
 @media (min-width: 1440px) {
   body {
@@ -89,4 +110,5 @@ form {
   background-image: url(/images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: 210px;
-  border: solid 1px #ff7a7a; }
+  border: solid 1px #ff7a7a;
+  height: 40px; }

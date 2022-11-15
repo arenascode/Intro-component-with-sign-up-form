@@ -45,29 +45,29 @@ form.onsubmit = (e) => {
   const disableFormFields = () => {
     // Name Input
     errorName.innerHTML = `first name cannot be empty`;
+    errorName.classList.add('errorStyle');
     firstName.classList.add("imgBG");
     firstName.removeAttribute("placeholder");
     // Last Name Input
     errorLastName.innerHTML = `last name cannot be empty`;
+    errorLastName.classList.add("errorStyle");
     lastName.classList.add("imgBG");
     lastName.removeAttribute("placeholder");
     // email Input
     errorMailUser.innerHTML = `Looks like this is not an email`;
-    emailUser.classList.add("imgBG");
+    errorMailUser.classList.add("errorStyle");
+    emailUser.classList.add("imgBG", "placeHolderErrorMail");
     emailUser.removeAttribute("placeholder");
+    emailUser.setAttribute("placeholder", "email@example/com")
     // pass input
     errorPassUser.innerHTML = `Password cannot be empty`;
+    errorPassUser.classList.add("errorStyle");
     passUser.classList.add("imgBG");
     passUser.removeAttribute("placeholder");
 
-    // let formFields = document.getElementById("form").elements
-    // let arrayFields = Array.from(formFields)
-    // console.log(arrayFields.pop());
-    // arrayFields.forEach((input) => {
-      
-    //   console.log(input.type); 
-    // })
+
   }
+
   // when the user don't complete all fields
   (firstName.value == "" && lastName.value == "" && emailUser.value == "" && passUser.value == "") ? 
   disableFormFields() : console.log('some of fields are completed');

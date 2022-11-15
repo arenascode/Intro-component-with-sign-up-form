@@ -3,7 +3,9 @@ body {
   background-color: hsl(0, 100%, 74%) ;
   font-family: 'Poppins', sans-serif;
   
-  h1 {  
+  .titleAndDescription {
+  h1 {
+    font-size: 27px;
     font-weight: 500;
     color: white;
     text-align: center;
@@ -12,15 +14,23 @@ body {
     color: white;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    font-size: 14px;
+    justify-content: center;
+    // font-size: smaller;
+    // line-height: 25px;
+    margin: 0 25px 0;
   }
+}
   .testTime {
     background-color: hsl(248, 32%, 49%);
-    width: 80%;
+    width: 65%;
     text-align: center;
     color: white;
+    font-size: 13px;
     border-radius: 10px;
     padding: 17px 30px;
-    margin: 50px 10px 30px;
+    margin: 50px 0px 30px;
+    margin-left: 33px;
     box-shadow: 0 8px #2119502b;
   p {
     margin: 0 30px 0;
@@ -31,13 +41,14 @@ form {
   background-color: white;
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  // row-gap: 15px;
   align-items: center;
   border-radius: 20px;
   width: 80%;
   align-self: center;
   margin: auto;
   box-shadow: 0 8px #2119502b;
+  margin-bottom: 50px;
   input {
     margin-top: 12px;
     width: 80%;
@@ -57,7 +68,11 @@ form {
     border: none;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
   }
+  .submitBtn:hover {
+  background-color: hsla(154, 59%, 51%, 0.695);
+}
   p {
     color: hsl(246, 25%, 77%);
     font-size: 10px;
@@ -71,6 +86,22 @@ form {
     }
   }
 }
+
+.errorStyle {
+  color: hsl(0, 100%, 74%);
+  font-size: x-small;
+  font-style: italic;
+  display: flex;
+  align-self: end;
+  margin-right: 26px;
+}
+
+.placeHolderErrorMail::placeholder {
+  font-size: small;
+  color: hsl(0, 100%, 74%);
+
+}
+
 
 @media (min-width: 1440px) {
 
@@ -109,4 +140,7 @@ form {
   background-repeat: no-repeat;
   background-position: 210px;
   border: solid 1px hsl(0, 100%, 74%);
+  height: 40px;
 }
+
+
