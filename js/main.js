@@ -96,8 +96,9 @@ form.onsubmit = (e) => {
     form.reset()
     firstName.setAttribute("placeholder", "First Name")
     lastName.setAttribute("placeholder", "Last Name");
+    emailUser.classList.remove("placeHolderErrorMail");
     emailUser.setAttribute("placeholder", "Email Address");
-    firstName.setAttribute("placeholder", "Password");
+    passUser.setAttribute("placeholder", "Password");
     alert("thanks for your information")
 }
 } 
