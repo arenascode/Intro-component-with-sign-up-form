@@ -28,8 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/DesktopDesign.png) MediaQueriy >= 1440
-![](./images/MobileDesign.png)  Mobil First = 375px
+- MediaQueriy >= 1440
+![](./images/DesktopDesign.png) 
+- Mobile First = 375px
+![](./images/MobileDesign.png)  
 
 
 ### Links
